@@ -1,0 +1,4 @@
+.terraform/
+./environments/production/.terraform
+./environments/development/.terraform
+./environments/staging/.terraform
