@@ -1,12 +1,14 @@
+# Include a Weblogic 10.3.6 server for deployments
+
 apiVersion: v1
 kind: Pod
 metadata:
-  name: myapp
+  name: jdev
   labels:
-    name: myapp
+    name: weblogic11
 spec:
   containers:
-  - name: myapp
+  - name: jdev
     image: summersillk/acesdevtest:version1.2
     ports:
       - containerPort: 7000
