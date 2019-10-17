@@ -2,11 +2,11 @@
 apiVersion: tekton.dev/v1alpha1
 kind: PipelineResource
 metadata:
-  name: skaffold-git
+  name: aces-fos-repo-resource
 spec:
   type: git
   params:
     - name: revision
       value: master
     - name: url
-      value: https://github.com/GoogleContainerTools/skaffold
+      value: https://bitbucket.di2e.net/scm/aces/

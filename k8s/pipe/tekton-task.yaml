@@ -2,7 +2,7 @@
 apiVersion: tekton.dev/v1alpha1
 kind: TaskRun
 metadata:
-  name: echo-hello-world-task-run
+  name: PostExecutionTasks
 spec:
   taskRef:
-    name: echo-hello-world
+    name: PostExecutionTasks
