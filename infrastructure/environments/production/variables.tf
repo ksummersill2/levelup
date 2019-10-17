@@ -1,6 +1,6 @@
 variable "AWS_ACCESS_KEY_ID" {
-  default = "AKIAR7LKBQ7PBA7BGOMD"
+  default = "Enter Access Key ID Here"
 }
 variable "AWS_SECRET_KEY_ID" {
-  default = "M8r4vkkUnE2mSdt7T3qvgkXmR2/I1yoKsKhtzp/j"
+  default = "Enter Secret Key Here"
 }
