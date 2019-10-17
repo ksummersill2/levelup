@@ -1,0 +1,12 @@
+# Displays how to pull a resource for a CI/CD Pipeline within Kubernetes, Knative, and Tekton
+apiVersion: tekton.dev/v1alpha1
+kind: PipelineResource
+metadata:
+  name: skaffold-git
+spec:
+  type: git
+  params:
+    - name: revision
+      value: master
+    - name: url
+      value: https://github.com/GoogleContainerTools/skaffold

@@ -12,14 +12,10 @@ module "bastion" {
 
 # module "securitygroups" {
 #   source = "./modules/securitygroups"
-# }
+# }terr
 
 module "rds" {
   source = "./modules/rds"
-}
-
-module "s3" {
-  source = "./modules/s3"
 }
 
 module "beanstalk" {

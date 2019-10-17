@@ -5,7 +5,6 @@ pipeline {
                         alwaysPull true
                         registryCredentialsId 'd0faee3e-65b0-4ab7-83a1-b1709af66014'
                         args '-u root --privileged'
-                        // args '-u root --privileged -m=8g --memory-swap="9g"'
                     }
             }
     environment {
@@ -152,7 +151,7 @@ pipeline {
                 echo 'Successfully Compiled and Deployed EODIMS EAR to Developement'
             }
             failure {
-                mail bcc: '', body: "<b>EODIMS Failed Deployment to Dev Server</b><br>Project: ${env.JOB_NAME} <br>Build Number: ${env.BUILD_NUMBER} <br> URL de build: ${env.BUILD_URL}", cc: '', charset: 'UTF-8', from: '', mimeType: 'text/html', replyTo: '', subject: "ERROR CI: Project name -> ${env.JOB_NAME}", to: "ksummersill@appddictionstudio.com";
+                mail bcc: '', body: "<b><Application Name> Failed Deployment to Dev Server</b><br>Project: ${env.JOB_NAME} <br>Build Number: ${env.BUILD_NUMBER} <br> URL de build: ${env.BUILD_URL}", cc: '', charset: 'UTF-8', from: '', mimeType: 'text/html', replyTo: '', subject: "ERROR CI: Project name -> ${env.JOB_NAME}", to: "ksummersill@appddictionstudio.com";
             }
             unstable {
                 echo 'The job ran unstable, please check!'

@@ -3,7 +3,7 @@ variable "cluster_name" {
 } 
 
 variable "instance_class_mysql" {
-  default = "db.r4.4xlarge"
+  default = "db.t2.medium"
 }
 
 variable "instance_class_aurora" {
@@ -11,11 +11,11 @@ variable "instance_class_aurora" {
 }
 
 variable "username" {
-  default = "master"
+  default = "baseConnect"
 }
 
 variable "password" {
-  default = "password"
+  default = "baseConnect!"
 }
 
 variable "basic_db_instance_class" {
